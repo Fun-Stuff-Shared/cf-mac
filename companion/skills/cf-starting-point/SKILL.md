@@ -125,7 +125,7 @@ To save it, use the first path that works.
 2. Run exactly this command:
 
 ```
-node ${CLAUDE_PLUGIN_ROOT}/launcher.mjs cf starting-point save /tmp/cf-starting-point-draft.md
+sh ${CLAUDE_PLUGIN_ROOT}/cf.sh cf starting-point save /tmp/cf-starting-point-draft.md
 ```
 
 If it says to install the Cognitive Fingerprint app and open it once, tell the person that in those words and use Path B.

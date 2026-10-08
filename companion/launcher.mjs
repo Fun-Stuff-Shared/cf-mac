@@ -1,7 +1,7 @@
 // Starts the Cognitive Fingerprint app's own CF tools for Claude Code. The app writes a small record
 // when it opens (its CF folder, its executable, the folder that holds its tools); this reads it and
 // runs the app's executable as Node on the requested tool, so the tools always match the app.
-// Usage: node launcher.mjs mcp | node launcher.mjs cf starting-point save <draft-file> | node launcher.mjs cf doctor
+// Usage (through cf.sh): cf.sh mcp | cf.sh cf starting-point save <draft-file> | cf.sh cf doctor
 import { spawn } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
 import { homedir } from "node:os";
@@ -31,7 +31,7 @@ if (mode === "mcp" && command === undefined) args = [tools.mcp, "--cf", folder];
 // The Starting Point is saved from one draft file; doctor only reports and takes nothing more, so it can never repair.
 else if (mode === "cf" && command === "starting-point" && rest[0] === "save" && rest.length === 2) args = [tools.cf, "starting-point", "save", folder, rest[1]];
 else if (mode === "cf" && command === "doctor" && rest.length === 0) args = [tools.cf, "doctor", folder];
-else fail("Usage: node launcher.mjs mcp | cf starting-point save <draft-file> | cf doctor. The dashboard itself opens in the app.");
+else fail("Usage: cf.sh mcp | cf.sh cf starting-point save <draft-file> | cf.sh cf doctor. The dashboard itself opens in the app.");
 
 const child = spawn(executable, args, { stdio: "inherit", env: { ...process.env, ELECTRON_RUN_AS_NODE: "1", CF_DIST_DIR: join(plugin, "dist") } });
 child.on("error", () => fail(MISSING));
