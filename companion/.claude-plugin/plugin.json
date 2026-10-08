@@ -1,0 +1,9 @@
+{
+  "name": "cf",
+  "displayName": "Cognitive Fingerprint",
+  "version": "0.1.0",
+  "description": "Connects Claude Code to the Cognitive Fingerprint app on this Mac: your AI agents read the findings you confirmed, and Claude can open the app, help you write your Starting Point, and draft from your expertise.",
+  "author": {
+    "name": "Max Bernstein"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "cognitive-fingerprint-app",
+  "description": "Connects Claude Code to the Cognitive Fingerprint app.",
+  "owner": {
+    "name": "Cognitive Fingerprint"
+  },
+  "plugins": [
+    {
+      "name": "cf",
+      "source": "./companion",
+      "description": "Your AI agents read the findings you confirmed in the Cognitive Fingerprint app, and Claude can open the app, help with your Starting Point, and draft from your expertise."
+    }
+  ]
+}
