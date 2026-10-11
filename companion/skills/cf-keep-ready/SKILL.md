@@ -5,10 +5,10 @@ description: Have the person's Cognitive Fingerprint dashboard open whenever the
 
 # CF Keep Ready
 
-The dashboard is the Cognitive Fingerprint app, and the app opens at login when the person turns that on in the app itself. There is nothing to run here.
+The steps for this live in the Cognitive Fingerprint app, so they always match the app the person has. Run exactly this one command:
 
-Send this message, as written:
+```
+sh ${CLAUDE_PLUGIN_ROOT}/cf.sh guide cf-keep-ready
+```
 
-> In the Cognitive Fingerprint app, open the File menu and choose Open at Login. A check mark means it opens whenever your Mac starts; choose it again to turn that off.
-
-If they ask whether it is on, tell them the check mark next to Open at Login in the app's File menu shows it.
+Follow what it prints as the steps for this request. If it prints a line about installing, opening or updating the app instead, tell the person that line and stop.

@@ -5,16 +5,10 @@ description: Open the person's Cognitive Fingerprint dashboard, which lives in t
 
 # CF Open
 
-The dashboard is the Cognitive Fingerprint app. Opening the app opens the dashboard, already signed in, on the CF folder the app has open.
-
-Run exactly this one command:
+The steps for this live in the Cognitive Fingerprint app, so they always match the app the person has. Run exactly this one command:
 
 ```
-open -a "Cognitive Fingerprint"
+sh ${CLAUDE_PLUGIN_ROOT}/cf.sh guide cf-open
 ```
 
-Then send this message, as written:
-
-> Your dashboard is open in the Cognitive Fingerprint app.
-
-If the command says it cannot find the application, the app is not installed. Tell the person in one line that their dashboard lives in the Cognitive Fingerprint app, and that they can download it from github.com/Fun-Stuff-Shared/cf-mac/releases/latest, open the DMG and drag it to Applications. Do not try other commands.
+Follow what it prints as the steps for this request. If it prints a line about installing, opening or updating the app instead, tell the person that line and stop.

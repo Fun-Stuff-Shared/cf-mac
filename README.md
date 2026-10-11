@@ -19,3 +19,5 @@ claude plugin install cf@cognitive-fingerprint-app
 
 Your agents can then read the findings you confirmed, and you can say "open my CF dashboard" to
 open the app.
+
+The plugin takes its tools and its steps from the app, so when the app updates, the plugin does too.
