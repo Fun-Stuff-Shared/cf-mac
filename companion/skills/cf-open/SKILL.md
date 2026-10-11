@@ -1,6 +1,6 @@
 ---
 name: cf-open
-description: Open the person's Cognitive Fingerprint dashboard, which lives in the Cognitive Fingerprint app on their Mac. Use when they ask to open, show, or see their dashboard, Home screen, Your Expertise map, Library, or Skills.
+description: Open the person's Cognitive Fingerprint dashboard, which lives in the Cognitive Fingerprint app on their computer. Use when they ask to open, show, or see their dashboard, Home screen, Your Expertise map, Library, or Skills.
 ---
 
 # CF Open

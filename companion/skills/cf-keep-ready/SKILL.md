@@ -1,6 +1,6 @@
 ---
 name: cf-keep-ready
-description: Have the person's Cognitive Fingerprint dashboard open whenever their Mac starts, stop doing that, or say how to check. Use when they say "keep my dashboard ready", "start my CF dashboard automatically", "open my CF at login", or ask to stop it starting by itself.
+description: Have the person's Cognitive Fingerprint dashboard open whenever their computer starts, stop doing that, or say how to check. Use when they say "keep my dashboard ready", "start my CF dashboard automatically", "open my CF at login", or ask to stop it starting by itself.
 ---
 
 # CF Keep Ready

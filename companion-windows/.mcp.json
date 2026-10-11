@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "cf": {
+      "command": "${LOCALAPPDATA}\\Programs\\cognitive-fingerprint\\Cognitive Fingerprint.exe",
+      "args": ["${LOCALAPPDATA}\\Programs\\cognitive-fingerprint\\resources\\plugin\\companion\\launcher.mjs", "mcp"],
+      "env": { "ELECTRON_RUN_AS_NODE": "1", "CF_COMPANION_ROOT": "${CLAUDE_PLUGIN_ROOT}" }
+    }
+  }
+}

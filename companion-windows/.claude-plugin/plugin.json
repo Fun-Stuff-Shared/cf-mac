@@ -1,0 +1,9 @@
+{
+  "name": "cf-windows",
+  "displayName": "Cognitive Fingerprint",
+  "version": "0.4.0",
+  "description": "Connects Claude Code to the Cognitive Fingerprint app on this computer: your AI agents read the findings you confirmed, and Claude can open the app, help you write your Starting Point, and draft from your expertise. Its tools and steps come from the app, so it stays up to date with the app.",
+  "author": {
+    "name": "Max Bernstein"
+  }
+}

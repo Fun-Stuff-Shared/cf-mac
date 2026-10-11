@@ -8,7 +8,12 @@
     {
       "name": "cf",
       "source": "./companion",
-      "description": "Your AI agents read the findings you confirmed in the Cognitive Fingerprint app, and Claude can open the app, help with your Starting Point, and draft from your expertise."
+      "description": "For Mac. Your AI agents read the findings you confirmed in the Cognitive Fingerprint app, and Claude can open the app, help with your Starting Point, and draft from your expertise."
+    },
+    {
+      "name": "cf-windows",
+      "source": "./companion-windows",
+      "description": "For Windows. Your AI agents read the findings you confirmed in the Cognitive Fingerprint app, and Claude can open the app, help with your Starting Point, and draft from your expertise."
     }
   ]
 }
