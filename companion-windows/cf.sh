@@ -7,12 +7,12 @@ case "$(uname -s)" in
     programs="$(cygpath -u "${LOCALAPPDATA:-}")/Programs/cognitive-fingerprint"
     app="${CF_APP_EXECUTABLE:-$programs/Cognitive Fingerprint.exe}"
     launcher="${CF_APP_LAUNCHER:-$(dirname "$app")/resources/plugin/companion/launcher.mjs}"
-    get="download Cognitive-Fingerprint-Setup.exe from github.com/Fun-Stuff-Shared/cf-mac/releases/latest and run it"
+    get="download github.com/Fun-Stuff-Shared/cognitive-fingerprint/releases/latest/download/Cognitive-Fingerprint-Windows.exe and open it"
     ;;
   *)
     app="${CF_APP_EXECUTABLE:-/Applications/Cognitive Fingerprint.app/Contents/MacOS/Cognitive Fingerprint}"
     launcher="${CF_APP_LAUNCHER:-$(dirname "$app")/../Resources/plugin/companion/launcher.mjs}"
-    get="download the .dmg from github.com/Fun-Stuff-Shared/cf-mac/releases/latest, open it, and drag Cognitive Fingerprint into Applications"
+    get="download github.com/Fun-Stuff-Shared/cognitive-fingerprint/releases/latest/download/Cognitive-Fingerprint-Mac.dmg, open it, and drag Cognitive Fingerprint into Applications"
     ;;
 esac
 if [ ! -f "$app" ] || [ ! -f "$launcher" ]; then
